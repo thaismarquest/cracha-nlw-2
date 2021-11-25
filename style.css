@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/degrade2.png) no-repeat;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+  background-color: #121214;
+  background-position: center top;
+}
+
+.container {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 540px;
+  background-color: #202024;
+  background-image: url(images/vetor.png);
+  background-repeat: no-repeat;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+  padding-top: 60px;
+}
+
+.avatar span {
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+
+.faixa {
+  background: url(images/faixa-quebra.png) no-repeat;
+  position: absolute;
+  width: 80px;
+  height: 164px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 40px;
+}
